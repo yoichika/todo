@@ -1,0 +1,53 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 14px;
+  font-size: 13px;
+  color: #6b7280;
+  border-top: 1px solid #e5e7eb;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.count {
+  white-space: nowrap;
+}
+
+.filters {
+  display: flex;
+  gap: 4px;
+}
+
+.btn {
+  background: none;
+  border: 1.5px solid transparent;
+  padding: 4px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 13px;
+  color: #6b7280;
+  transition: all 0.1s;
+}
+
+.btn:hover {
+  border-color: #d1d5db;
+}
+
+.btn.active {
+  border-color: #6366f1;
+  color: #6366f1;
+}
+
+.clearBtn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 13px;
+  color: #9ca3af;
+  transition: color 0.1s;
+}
+
+.clearBtn:hover {
+  color: #ef4444;
+}

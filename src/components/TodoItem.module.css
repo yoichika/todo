@@ -1,0 +1,214 @@
+.item {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 12px 14px;
+  border-bottom: 1px solid #e5e7eb;
+  transition: background-color 0.1s;
+}
+
+.item:last-child {
+  border-bottom: none;
+}
+
+.item:hover {
+  background-color: #f9fafb;
+}
+
+.item.completed .text {
+  text-decoration: line-through;
+  color: #9ca3af;
+}
+
+/* Rank badge */
+.rank {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  font-weight: 700;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.rankCritical { background: #fef2f2; color: #dc2626; }
+.rankImportant { background: #eff6ff; color: #2563eb; }
+.rankUrgent { background: #fff7ed; color: #ea580c; }
+.rankNormal { background: #f3f4f6; color: #6b7280; }
+
+.checkbox {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+  accent-color: #6366f1;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.content {
+  flex: 1;
+  min-width: 0;
+}
+
+.text {
+  display: block;
+  font-size: 15px;
+  line-height: 1.4;
+  word-break: break-word;
+}
+
+/* Badges row */
+.badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin-top: 5px;
+}
+
+.badge {
+  font-size: 11px;
+  padding: 2px 8px;
+  border-radius: 999px;
+  font-weight: 500;
+}
+
+.dueOverdue { background: #fef2f2; color: #dc2626; }
+.dueToday   { background: #fff7ed; color: #ea580c; }
+.dueSoon    { background: #fefce8; color: #ca8a04; }
+.dueNormal  { background: #f3f4f6; color: #6b7280; }
+
+.priA { background: #fef2f2; color: #dc2626; }
+.priB { background: #fff7ed; color: #ea580c; }
+.priC { background: #f0fdf4; color: #16a34a; }
+
+.impA { background: #eff6ff; color: #2563eb; }
+.impB { background: #f5f3ff; color: #7c3aed; }
+.impC { background: #f3f4f6; color: #6b7280; }
+
+/* Suggested order reason */
+.reason {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 5px;
+  font-size: 12px;
+  color: #6b7280;
+}
+
+.quadrantLabel {
+  font-size: 11px;
+  font-weight: 600;
+  padding: 2px 7px;
+  border-radius: 4px;
+  white-space: nowrap;
+}
+
+.qlCritical { background: #fef2f2; color: #dc2626; }
+.qlImportant { background: #eff6ff; color: #2563eb; }
+.qlUrgent { background: #fff7ed; color: #ea580c; }
+.qlNormal { background: #f3f4f6; color: #6b7280; }
+
+/* Edit form */
+.editForm {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.editText {
+  width: 100%;
+  padding: 5px 8px;
+  font-size: 14px;
+  border: 1.5px solid #6366f1;
+  border-radius: 6px;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.editFields {
+  display: flex;
+  gap: 5px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.editDate,
+.editSelect {
+  padding: 4px 6px;
+  font-size: 12px;
+  border: 1.5px solid #d1d5db;
+  border-radius: 5px;
+  background: white;
+  outline: none;
+}
+
+.editDate:focus,
+.editSelect:focus {
+  border-color: #6366f1;
+}
+
+.saveBtn {
+  padding: 4px 12px;
+  font-size: 12px;
+  background: #6366f1;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.saveBtn:hover {
+  background: #4f46e5;
+}
+
+.cancelBtn {
+  padding: 4px 8px;
+  font-size: 14px;
+  background: none;
+  border: 1.5px solid #d1d5db;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #6b7280;
+  line-height: 1;
+}
+
+.cancelBtn:hover {
+  border-color: #9ca3af;
+}
+
+/* Action buttons */
+.editBtn {
+  background: none;
+  border: none;
+  font-size: 13px;
+  color: #d1d5db;
+  cursor: pointer;
+  padding: 2px 4px;
+  border-radius: 4px;
+  transition: color 0.1s;
+  flex-shrink: 0;
+}
+
+.editBtn:hover {
+  color: #6366f1;
+}
+
+.deleteBtn {
+  background: none;
+  border: none;
+  font-size: 18px;
+  color: #d1d5db;
+  cursor: pointer;
+  line-height: 1;
+  padding: 2px 4px;
+  border-radius: 4px;
+  transition: color 0.1s;
+  flex-shrink: 0;
+}
+
+.deleteBtn:hover {
+  color: #ef4444;
+}
